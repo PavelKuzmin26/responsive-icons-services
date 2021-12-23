@@ -1,0 +1,95 @@
+:root{
+    --iconsbackground: #47a0ff;
+    --newsbackclr: #ebebeb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container .service{
+    position: relative;
+    width: 300px;
+    height: 280px;
+    background: rgba(0, 45, 97, 0.562);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container .service .icons{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.container .service:hover .icons{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .service .icons i {
+    font-size: 5rem;
+    color: #fff;
+    transition: .5s;
+}
+.container .service:hover .icons i{
+    font-size: 2rem;
+}
+.container .service .content{
+    padding: 22px;
+    margin-top: 90px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    transform: scale(0);
+    transition-delay: 0;
+}
+.container .service:hover .content{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+.container .service:hover .content h2,p{
+    color: #fff;
+}
+.first{
+    background: blueviolet !important;
+}
+.second{
+    background: #47a0ff !important;
+}
+.third{
+    background: orangered !important;
+}
+.fourth{
+    background: #fd6494 !important;
+}
+.fifth{
+    background: #43f390 !important;
+}
+.sixth{
+    background: #ffb508 !important;
+}
